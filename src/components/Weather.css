@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 20%;
+    height: 70vh;
+    background: linear-gradient(to bottom, #0d0d2b, #47226c, #b12bbb);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.disp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h3 {
+    margin-left: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main .search {
+    margin-top: 3vh;
+    gap: 10px;
+}
+
+.main .search input {
+    border-radius: 8px;
+    height: 1.3rem;
+    outline: none;
+}
+
+.main .search .searchicon img {
+    filter: invert(1);
+    width: 15px;
+    height: 15px;
+}
+
+.main .search .searchicon {
+    border-radius: 50%;
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+}
+
+.main .center{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .center .city{
+    padding-top: 15px;
+}
+
+.main .center .image img{
+    width: 6rem;
+    height: 6rem;
+}
+.main .center .temp{
+    flex-direction: column;
+
+}
+.main .center .quality{
+    display: flex;
+    flex-direction: column;
+}
+.end{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.end img{
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        background: none !important;
+        background-color: #ffffff !important;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20px;
+        min-height: 100vh;
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .main h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .main .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .main .search input {
+        width: 65%;
+        height: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .main .search .searchicon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .main .search .searchicon img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .main .center .image img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+    }
+
+    .main .center .city,
+    .main .center .temp,
+    .main .center .quality {
+        text-align: center;
+    }
+
+    .end {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .end div {
+        font-size: 0.9rem;
+    }
+
+    .end img {
+        width: 18px;
+        height: 18px;
+    }
+}
