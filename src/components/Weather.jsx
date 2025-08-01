@@ -64,6 +64,7 @@ const Weather = () => {
       humidity: data.main.humidity,
       windSpeed: data.wind.speed,
       temprature: Math.floor(data.main.temp),
+      feel: Math.floor(data.main.feels_like),
       location: data.name,
       icon: icon
     })
@@ -102,8 +103,8 @@ const Weather = () => {
           {weatherInfo.temprature} °C
         </div>
         <div className="quality disp">
-          <p>Air Quality Index (AQI)</p>
-          <p>86</p>
+          <p>Temperature Feels Like</p>
+          <p>{weatherInfo.feel} °C</p>
         </div>
 
       </div>
